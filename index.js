@@ -9,7 +9,7 @@ const swaggerFile = require('./swagger_output.json')
 
 const app = express();
 
-app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 let url = 'mongodb+srv://juninhowerner31:SogamXB8ZbbyMChu@challenge-campaigns-api.jcu0q4u.mongodb.net/?retryWrites=true&w=majority';
 let mongoDB = url;

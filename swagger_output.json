@@ -2,18 +2,18 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "title": "Campaigns Api",
+    "description": "Projeto do desafio da empresa Infleux"
   },
-  "host": "localhost:3000",
+  "host": "https://campaigns-api-challenge.herokuapp.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/v1/campaigns/": {
       "post": {
-        "description": "",
+        "description": "Cria uma nova campanha",
         "parameters": [
           {
             "name": "body",
@@ -50,7 +50,7 @@
         }
       },
       "get": {
-        "description": "",
+        "description": "Retorna todas as campanhas criadas",
         "parameters": [],
         "responses": {
           "200": {
@@ -61,7 +61,7 @@
     },
     "/v1/campaigns/{id}": {
       "put": {
-        "description": "",
+        "description": "Altera a campanha",
         "parameters": [
           {
             "name": "id",
@@ -77,7 +77,7 @@
         }
       },
       "get": {
-        "description": "",
+        "description": "Retorna a campanha de acordo com o ID",
         "parameters": [
           {
             "name": "id",
@@ -95,7 +95,7 @@
     },
     "/v1/campaigns/advertiser/{id}": {
       "get": {
-        "description": "",
+        "description": "Retorna todas as campanhas de um advertiser",
         "parameters": [
           {
             "name": "id",
@@ -113,7 +113,7 @@
     },
     "/v1/campaigns/campaigns-region/{region}": {
       "get": {
-        "description": "",
+        "description": "Retorna a melhor campanha de acordo com a região",
         "parameters": [
           {
             "name": "region",
@@ -131,7 +131,7 @@
     },
     "/v1/campaigns/testar": {
       "get": {
-        "description": "",
+        "description": "Rota de teste",
         "parameters": [],
         "responses": {
           "200": {
@@ -142,7 +142,7 @@
     },
     "/v1/avertiser/": {
       "post": {
-        "description": "",
+        "description": "Cria um novo advertiser",
         "parameters": [
           {
             "name": "body",
@@ -167,7 +167,7 @@
         }
       },
       "get": {
-        "description": "",
+        "description": "Retorna todos os advertiser",
         "parameters": [],
         "responses": {
           "200": {
