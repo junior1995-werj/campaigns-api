@@ -4,7 +4,7 @@
   "description": "api teste para a emrpesa infleux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Junior Werner <juninhowerner31@gmail.com>",
   "license": "ISC",
