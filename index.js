@@ -21,6 +21,6 @@ app.use(cors())
 app.use('/v1/campaigns', campaigns);
 app.use('/v1/avertiser', avertiser);
 
-app.listen(3001, () => {
-    console.log('Servidor em execução no porto' + 3001);
+app.listen(5000, () => {
+    console.log('Servidor em execução no porto' + 5000);
 });
