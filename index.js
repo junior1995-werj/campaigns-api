@@ -4,8 +4,12 @@ const mongoose = require('mongoose');
 var cors = require('cors')
 const campaigns = require('./api/routes/campaigns.routes'); 
 const avertiser = require('./api/routes/avertiser.routes'); 
+const swaggerUi = require('swagger-ui-express')
+const swaggerFile = require('./swagger_output.json')
+
 const app = express();
 
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 let url = 'mongodb+srv://juninhowerner31:SogamXB8ZbbyMChu@challenge-campaigns-api.jcu0q4u.mongodb.net/?retryWrites=true&w=majority';
 let mongoDB = url;
